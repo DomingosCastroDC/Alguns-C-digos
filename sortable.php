@@ -1,9 +1,16 @@
 <?php
 
+/** Aqui se encontra o arquivo de configuração do banco de dados */
 require_once __DIR__."/configDb.php";
 
+/**
+ * @var $post Pega um dado específico  vindo do arquivo js , após uma execução post
+ * 
+ */
 $post = filter_input(INPUT_POST,"arrayOrdem",FILTER_SANITIZE_NUMBER_INT);
 
+
+/** Verifica se existe um valor na chave arrayOrdem */
 if(isset($post))
 {
     $ordem_position = $post;
