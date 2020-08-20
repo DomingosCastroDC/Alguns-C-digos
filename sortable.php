@@ -7,13 +7,13 @@ require_once __DIR__."/configDb.php";
  * @var $post Pega um dado específico  vindo do arquivo js , após uma execução post
  * 
  */
-$post = filter_input(INPUT_POST,"arrayOrdem",FILTER_SANITIZE_NUMBER_INT);
+
 
 
 /** Verifica se existe um valor na chave arrayOrdem */
-if(isset($post))
+if(isset($_POST['arrayOrdem']))
 {
-    $ordem_position = $post;
+    $ordem_position = $_POST['arrayOrdem'];
 
     $ordem_conta = 1;
     foreach ($ordem_position as $ordem_id) {

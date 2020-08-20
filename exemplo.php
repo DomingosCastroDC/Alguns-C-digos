@@ -2,7 +2,6 @@
 
 require_once __DIR__."/configDb.php";
 
-require_once __DIR__."/sortable.php";
 /**
  * @var $query Faz a consulta no banco de dados
  * @var $getAll pega todos os dados do banco de dados
